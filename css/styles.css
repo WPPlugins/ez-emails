@@ -1,0 +1,211 @@
+select.ezemails {
+	width: 200px;
+}
+
+table.ezemails {
+	clear:none;
+	margin: 0;
+}
+
+.ezemails th {
+	width: 50px;
+}
+
+#icon-ezemails {
+	background-image: url(../images/email.png);
+}
+
+.ezemails_left {
+	float:left;
+	width: 300px;
+//	overflow: hidden;
+}
+
+.ezemails_right {
+	margin-left: 320px;
+//	overflow: hidden;
+}
+
+.ezemails-option-page {
+	margin: 20px 0;
+}
+
+#ezemails_template_editor {
+	margin: 10px 0;
+}
+
+#ezemails_signature_editor {
+	margin: 10px 0;
+}
+
+#ezemails_email_preview {
+	position: relative;
+	width: 100%;
+}
+
+#iframeBlocker {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+#ezemails_email_preview_frame {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#ezemails_email_preview_frame html{
+}
+
+#ezemails_template_table_wrap, #ezemails_signature_table_wrap {
+	position:relative;
+}
+
+#ezemails_template_table_overlay, #ezemails_signature_table_overlay, #ezemails_send_overlay  {
+	position: fixed;
+	display:none;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.75) url(../images/loading.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 100;
+}
+
+.cliccable {
+	cursor: pointer;
+}
+
+#ezemails_page_overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.75);
+	z-index: 100;
+	display: none;
+}
+
+#ezemails_message_box {
+	position: absolute;
+	background: #fff;
+	width: 400px;
+	height: 200px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	box-shadow: 0 0 20px #000;
+	-moz-box-shadow: 0 0 20px #000;
+	-webkit-box-shadow: 0 0 20px #000;
+	padding:30px;
+}
+
+#ezemails_add_selected_users, #ezemails_cancel_selected_users {
+	position: absolute;
+	bottom:30px;
+	width: 60px;
+	text-align: center;
+}
+
+#ezemails_add_selected_users {
+	left:30px;
+}
+
+#ezemails_cancel_selected_users {
+	left:100px;
+}
+
+.ezemails_address, .ezemails_address_roles, .ezemails_address_label {
+	background-color: #f5f5f5;
+	border: 1px solid #d9d9d9;
+	cursor: default;
+	display: block;
+	white-space: nowrap;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	color: #222;
+	margin: 2px 5px 2px 0;
+	max-width: 200px;
+	padding: 0 3px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.ezemails_address_label {
+	background: transparent;
+	border: 0;
+	clear:both;
+	color: #666;
+}
+
+
+.ezemails_address_item {
+	display: none;
+}
+
+.ezemails_address.selected {
+	border: 1px solid #99b9d9;
+	background-color: #f0f7ff;
+}
+
+.ezemails_address_remove {
+	display: inline-block;
+	width: 14px;
+	height: 20px;
+	background: no-repeat url(../images/contact_sprite.gif) -2px 0;
+	opacity: .6;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.ezemails_address_remove:hover {
+	opacity: 1;
+}
+
+.ezemails textarea {
+	background: transparent;
+	border: 0;
+	padding: 0;
+	margin: 3px 0;
+//	width: 100%;
+//	max-width: 200px;
+	height: 20px;
+	line-height: 16px;
+	resize: none;
+	overflow:hidden;
+	box-shadow: 0 0 0;
+}
+
+.ezemails textarea:hover {
+	background: #f7f7f7;
+}
+
+.drop-hover {
+	background: #e0f0ff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+
+.tooltip {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	padding: 10px;
+	line-height: 24px;
+	display: none;
+}
